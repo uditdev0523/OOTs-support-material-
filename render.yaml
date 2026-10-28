@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smart-manufacturing-system
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: PORT
+        value: 8081
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
