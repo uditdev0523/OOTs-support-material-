@@ -31,7 +31,26 @@ The project is structured as a clean modular multi-module project:
 
 ---
 
-## 2. Deploying with Cloudflare
+## 2. Deploying on Render (Recommended: 24/7 Free Live Hosting)
+
+To keep the application permanently live online 24/7 with zero local computer dependencies, deploy directly to **Render.com**:
+
+### Option A: Instant 1-Click Deploy
+1. Click the 1-click deployment link:
+   **[Deploy to Render](https://render.com/deploy?repo=https://github.com/uditdev0523/OOTs-support-material-)**
+2. Sign in to Render (via GitHub).
+3. Render automatically parses `render.yaml`, configures the Docker container, memory constraints (`-Xmx384m`), health check (`/login`), and assigns a free permanent HTTPS domain:
+   `https://smart-manufacturing-system.onrender.com`
+
+### Option B: From Render Dashboard
+1. Go to [Render Dashboard](https://dashboard.render.com).
+2. Click **New +** -> **Blueprint**.
+3. Select your repository: `uditdev0523/OOTs-support-material-`.
+4. Click **Apply**. Render will automatically build the `Dockerfile` and keep it live 24/7!
+
+---
+
+## 3. Alternative: Deploying with Cloudflare
 
 Because Spring Boot + MySQL is a full-stack, stateful server application, the most reliable and production-grade way to deploy it behind Cloudflare is via **Cloudflare Tunnel (`cloudflared`)**.
 

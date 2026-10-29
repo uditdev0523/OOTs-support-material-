@@ -1,9 +1,8 @@
 # Smart Manufacturing Order Processing System
 
-[![Java CI with Maven](https://github.com/uditpratapsingh/smart-manufacturing-order-processing-system/actions/workflows/maven.yml/badge.svg)](https://github.com/uditpratapsingh/smart-manufacturing-order-processing-system/actions)
-![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2026-orange)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/uditdev0523/OOTs-support-material-)
+[![Java](https://img.shields.io/badge/Java-17%20%7C%2021%20%7C%2026-orange)](https://github.com/uditdev0523/OOTs-support-material-)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.5-brightgreen)
-![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
 ![Thymeleaf](https://img.shields.io/badge/Frontend-Thymeleaf%20%2B%20Bootstrap%205-purple)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
