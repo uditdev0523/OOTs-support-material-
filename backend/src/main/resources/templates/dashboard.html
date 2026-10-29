@@ -7,19 +7,31 @@
 <body>
 <div th:fragment="content">
 
-    <!-- Page Header -->
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <div>
-            <h3 class="fw-bold mb-1">Manufacturing Executive Dashboard</h3>
-            <p class="text-muted mb-0">Real-time telemetry, shop floor queue, and order throughput.</p>
-        </div>
-        <div class="d-flex gap-2">
-            <a th:href="@{/orders/new}" class="btn btn-primary">
-                <i class="bi bi-plus-circle me-1"></i> New Manufacturing Order
-            </a>
-            <a th:href="@{/scheduling}" class="btn btn-outline-secondary">
-                <i class="bi bi-calendar-check me-1"></i> Production Queue
-            </a>
+    <!-- Humanized Welcome Header -->
+    <div class="card p-4 mb-4 border-0 shadow-sm" style="background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); color: #ffffff;">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <div>
+                <div class="d-flex align-items-center gap-2 mb-1">
+                    <span class="badge bg-white bg-opacity-20 text-white border-0 py-1 px-2 rounded-pill small">
+                        <i class="bi bi-broadcast me-1 text-warning"></i> Real-time Telemetry Active
+                    </span>
+                    <span class="badge bg-success bg-opacity-25 text-white border-0 py-1 px-2 rounded-pill small">
+                        <span class="pulse-dot me-1"></span> Systems Healthy
+                    </span>
+                </div>
+                <h3 class="fw-bold mb-1">Executive Manufacturing Dashboard</h3>
+                <p class="text-white-50 mb-0" style="font-size: 0.92rem;">
+                    Welcome to today's operations overview. Real-time shop floor scheduling, priority queues, and customer order fulfillment.
+                </p>
+            </div>
+            <div class="d-flex gap-2">
+                <a th:href="@{/orders/new}" class="btn btn-light fw-semibold text-primary shadow-sm">
+                    <i class="bi bi-plus-circle me-1"></i> New Order
+                </a>
+                <a th:href="@{/scheduling}" class="btn btn-outline-light fw-medium">
+                    <i class="bi bi-calendar-check me-1"></i> Production Queue
+                </a>
+            </div>
         </div>
     </div>
 

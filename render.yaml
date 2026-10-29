@@ -5,8 +5,13 @@ services:
     dockerfilePath: Dockerfile
     plan: free
     region: frankfurt
+    healthCheckPath: /login
     envVars:
       - key: PORT
         value: 8081
       - key: SPRING_PROFILES_ACTIVE
         value: default
+      - key: THYMELEAF_CACHE
+        value: "true"
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx384m -XX:+UseG1GC"

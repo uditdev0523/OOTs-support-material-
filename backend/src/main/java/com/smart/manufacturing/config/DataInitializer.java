@@ -79,15 +79,15 @@ public class DataInitializer implements CommandLineRunner {
         }
 
         // 2. Demo Users (Admin, Manager, Staff, Inventory Coordinator, Supervisor)
-        userService.registerUser("admin", "admin123", "Rajesh Sharma", "admin@smartmfg.com", "Executive Leadership",
+        userService.registerUser("admin", "Mfg#Shield2026", "Rajesh Sharma", "admin@smartmfg.com", "Executive Leadership",
                 Set.of(UserRole.ROLE_ADMIN));
-        userService.registerUser("manager", "manager123", "Anita Deshmukh", "manager@smartmfg.com", "Production Operations",
+        userService.registerUser("manager", "Mfg#Shield2026", "Anita Deshmukh", "manager@smartmfg.com", "Production Operations",
                 Set.of(UserRole.ROLE_PRODUCTION_MANAGER));
-        userService.registerUser("staff", "staff123", "Vikram Malhotra", "staff@smartmfg.com", "Sales & Order Entry",
+        userService.registerUser("staff", "Mfg#Shield2026", "Vikram Malhotra", "staff@smartmfg.com", "Sales & Order Entry",
                 Set.of(UserRole.ROLE_ORDER_STAFF));
-        userService.registerUser("inventory", "inventory123", "Suresh Pillai", "inventory@smartmfg.com", "Warehouse & Inventory",
+        userService.registerUser("inventory", "Mfg#Shield2026", "Suresh Pillai", "inventory@smartmfg.com", "Warehouse & Inventory",
                 Set.of(UserRole.ROLE_INVENTORY_COORDINATOR));
-        userService.registerUser("supervisor", "supervisor123", "Neha Kapoor", "supervisor@smartmfg.com", "Plant Quality & Oversight",
+        userService.registerUser("supervisor", "Mfg#Shield2026", "Neha Kapoor", "supervisor@smartmfg.com", "Plant Quality & Oversight",
                 Set.of(UserRole.ROLE_SUPERVISOR));
 
         User adminUser = userRepository.findByUsername("admin").orElseThrow();
